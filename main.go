@@ -30,8 +30,8 @@ func setupHandler() http.Handler {
 // Start a server that echos all data on the first stream opened by the client
 func main() {
 
-	certFile, _ := homedir.Expand("~/localhost.crt")
-	keyFile, _ := homedir.Expand("~/localhost.key")
+	certFile, _ := homedir.Expand("localhost.crt")
+	keyFile, _ := homedir.Expand("localhost.key")
 
 	handler := setupHandler()
 
